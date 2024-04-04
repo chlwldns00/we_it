@@ -1,1 +1,2 @@
 Koweps_hpwc14_2019_beta2.sav filter=lfs diff=lfs merge=lfs -text
+chapter11-1.ipynb filter=lfs diff=lfs merge=lfs -text
