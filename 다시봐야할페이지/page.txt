@@ -1,0 +1,7 @@
+249,263 9장
+dropna(), subset을 해야지만 그 컬럼에 해당되는 null값의 열을 지울수있다.
+-fillna로 결측값을 50~3분위수 345 랜덤값으로 대체해서 채워주면서 현재 상황에서의 결측지 대체 문제 해결(이 경우가 최대한 위 그래프와 동일)-
+random.seed(42)
+walfare_income_list=welfare['income'].apply(lambda x: np.random.randint(50, 350) if pd.isnull(x) else x)
+welfare['income']=walfare_income_list
+welfare['income'].isna().sum()
